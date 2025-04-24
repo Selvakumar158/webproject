@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--<button>9a</button>
+   <button class="js-button">9b</button>
+  <script>
+ document.querySelector('.js-button')
+  .innerHTML = `9b done!`;
+  </script>-->
+<input type="text"  class="js-text" placeholder="Your Name" onkeydown="
+     
+     keyBoard(event);
+
+" >
+
+  <button onclick="
+
+    textName();
+  
+  " >Submit</button>
+  <p class="js-para">
+ <script>
+
+  function keyBoard(event){
+
+    
+
+    if(event.key === 'Enter'){
+      textName();
+     }
+
+  }
+
+
+  function textName(){
+
+
+    const textElement = document.querySelector('.js-text');
+
+
+  document.querySelector('.js-para').innerHTML = `Your Name : ${textElement.value}`;
+  }
+
+
+ </script>
+  </p>
+</body>
+</html>
